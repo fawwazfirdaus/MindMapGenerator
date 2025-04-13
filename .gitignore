@@ -1,0 +1,34 @@
+# OS-specific & Editor Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python / FastAPI Backend (rag-mindmap-backend)
+rag-mindmap-backend/venv/
+rag-mindmap-backend/.env*
+!rag-mindmap-backend/.env.example
+rag-mindmap-backend/__pycache__/
+rag-mindmap-backend/*.pyc
+rag-mindmap-backend/*.pyo
+rag-mindmap-backend/*.pyd
+rag-mindmap-backend/.pytest_cache/
+rag-mindmap-backend/htmlcov/
+rag-mindmap-backend/.coverage
+
+# React / Vite Frontend (rag-mindmap-frontend)
+rag-mindmap-frontend/node_modules/
+rag-mindmap-frontend/dist/
+rag-mindmap-frontend/build/
+rag-mindmap-frontend/.env*
+!rag-mindmap-frontend/.env.example
+rag-mindmap-frontend/npm-debug.log*
+rag-mindmap-frontend/yarn-debug.log*
+rag-mindmap-frontend/yarn-error.log*
+rag-mindmap-frontend/.pnp.*
+rag-mindmap-frontend/.yarn/cache
+rag-mindmap-frontend/.yarn/unplugged
+rag-mindmap-frontend/.yarn/build-state.yml
+rag-mindmap-frontend/.yarn/install-state.gz 

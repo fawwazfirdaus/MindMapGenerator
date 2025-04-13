@@ -1,0 +1,124 @@
+/* Modal Overlay: Covers the screen, semi-transparent background */
+.modal-overlay {
+  position: fixed; /* Stay in place even when scrolling */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dim background */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  z-index: 1000; /* Ensure it's above other content */
+  cursor: pointer; /* Indicate clicking overlay closes modal */
+}
+
+/* Modal Content: The actual dialog box */
+.modal-content {
+  background-color: #fff;
+  padding: 25px 35px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Maximum width */
+  max-height: 85vh; /* Limit height to avoid overflow */
+  overflow-y: auto; /* Allow scrolling if content is too tall */
+  position: relative; /* Needed for absolute positioning of the close button */
+  cursor: default; /* Reset cursor for content area */
+}
+
+/* Close Button */
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.modal-close-button:hover {
+  color: #333;
+}
+
+/* Node Details Styling */
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.modal-image {
+    display: block;
+    max-width: 100%;
+    max-height: 200px; /* Limit image height */
+    margin: 15px auto; /* Center image and add spacing */
+    border-radius: 4px;
+}
+
+.modal-summary {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.modal-content hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 25px 0;
+}
+
+/* Chat Section Placeholder Styling */
+.chat-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.chat-history-placeholder {
+  background-color: #f9f9f9;
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  height: 150px; /* Example fixed height */
+  overflow-y: auto; /* Allow scrolling if history grows */
+  color: #777;
+}
+
+.chat-input-placeholder {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input-placeholder input[type="text"] {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.chat-input-placeholder button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #5c6bc0; /* Example button color */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-input-placeholder input:disabled,
+.chat-input-placeholder button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  color: #999;
+} 
